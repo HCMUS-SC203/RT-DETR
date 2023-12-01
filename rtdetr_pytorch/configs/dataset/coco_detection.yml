@@ -7,7 +7,7 @@ train_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: /kaggle/input/coco-2017-dataset/coco2017
+    img_folder: /kaggle/input/coco-2017-dataset/coco2017/train2017
     ann_file: /kaggle/input/coco-2017-dataset/coco2017/annotations/instances_train2017.json
     transforms:
       type: Compose
@@ -22,7 +22,7 @@ val_dataloader:
   type: DataLoader
   dataset: 
     type: CocoDetection
-    img_folder: /kaggle/input/coco-2017-dataset/coco2017
+    img_folder: /kaggle/input/coco-2017-dataset/coco2017/val2017
     ann_file: /kaggle/input/coco-2017-dataset/coco2017/annotations/instances_val2017.json
     transforms:
       type: Compose
